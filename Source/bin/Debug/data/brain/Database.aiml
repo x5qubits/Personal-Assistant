@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<config>
+<ident xcat="default">
+	<entity>*</entity>
+	<utterance>
+		<random>
+			<li>I'm sorry I don't understand</li>
+		</random>
+	</utterance>
+</ident>
+<ident xcat="default"><entity>TIME</entity><utterance><random><li><time/></li></random></utterance></ident>
+<ident xcat="default"><entity>DATE</entity><utterance><random><li><date/></li></random></utterance></ident>
+<ident xcat="commands"><entity>GO TO *</entity><utterance><think><thatstar><star/></thatstar></think></utterance></ident>
+<ident xcat="commands"><entity>OPEN *</entity><utterance><think><thatstar><star/></thatstar></think></utterance></ident>
+<ident xcat="questions"><entity>HOW FAR _ IS THE MOON</entity><utterance>384,400 km</utterance></ident>
+<ident xcat="questions"><entity>HOW FAR AWAY IS THE SUN</entity><utterance>384,400 km</utterance></ident>
+<ident xcat="questions"><entity>WHAT IS * TIMES *</entity><utterance></utterance></ident>
+<ident xcat="conversation"><entity>CUSTOM TAG NEWS</entity><utterance><news/></utterance></ident>
+<ident xcat="conversation"><entity>WHAT DID I JUST SAY</entity><utterance>you said "<input index="1"/>".</utterance></ident>
+<ident xcat="conversation"><entity>I AM BETTER THAN YOU</entity><utterance><random>  <li>In what way?</li>  <li>What makes you think so?</li>  <li>How do you know you are?</li>  </random></utterance></ident>  
+<ident xcat="conversation"><entity>WHAT IS THE CAPITAL _ BOUVET ISLAND</entity><utterance>none; administered from Oslo, Norway.   <think>      <set name="it">       <set name="topic">bouvet island</set>      </set>     </think>    </utterance></ident>  
+<ident xcat="conversation"><entity>DIVIDE * *</entity><utterance>
+<think>
+ <set name="x"><star/></set>
+ <set name="y"><star index="2" /></set>
+ <set name="err">100</set>
+</think>
+ <get name="x" /> devided by <get name="y" /> equals <get name="err" />
+</utterance></ident>
+</config>
+

@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root>
+  <item name="version" value="0.0.0.1"/>
+  <item name="name" value="unknown"/>
+  <item name="showlogs" value="false"/>
+  <item name="timeout" value="10000000"/>
+  <item name="timeoutmessage" value="ERROR: The request has timed out."/>
+  <item name="culture" value="en-US"/>
+  <item name="stripperregex" value="[^0-9a-zA-Z]"/>
+</root>
